@@ -6,5 +6,5 @@ In this implementation, I adopt double quantization where the scale for Q and K 
 
 This is tested on simulated data so the script builds a synthetic Q/K/V with injected outlier channels. The program compares rel_error(naive fp8, f64 true flash attention) and rel_error(double quantization fp8, f64 true flash attention). The proposed double quantization outperforms by 20%.
 
-DISCLAIMER: THIS IS HARDWARE INDEPENDENT AND DOES NOT EXPLOIT GPU ARCHITECTURE IT IS JUST VALIDATING THE ALGORITHM VIA ROUNDING APPROXIMATION
+DISCLAIMER: FOR HARDWARE INDEPENDENT CODE, RUN fp8-flash-attention.py TO TEST IT ON A GPU RUN fp8_flash_attn_triton.py
 
